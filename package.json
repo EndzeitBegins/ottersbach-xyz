@@ -1,0 +1,8 @@
+{
+  "name": "ottersbach.xyz",
+  "version": "1.0.0",
+  "description": "website deployed at ottersbach.xyz",
+  "main": "index.js",
+  "author": "Lucas Ottersbach",
+  "license": "MIT"
+}
