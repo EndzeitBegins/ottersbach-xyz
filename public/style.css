@@ -1,0 +1,198 @@
+:root {
+    --main-bg-color: #210714;
+    --main-color: #fff;
+    --ghost-body-color: #aaa;
+}
+
+body {
+    background: var(--main-bg-color);
+    color: var(--main-color);
+}
+
+.message {
+    font-size: large;
+    text-align: center;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.ghost {
+    animation: float 3s infinite ease-in-out, fadeInOut 5s infinite;
+    -webkit-animation: float 3s infinite ease-in-out, fadeInOut 5s infinite;
+    -moz-animation: float 3s infinite ease-in-out, fadeInOut 5s infinite;
+    -o-animation: float 3s infinite ease-in-out, fadeInOut 5s infinite;
+
+    display: inline-block;
+    margin-bottom: 60px;
+}
+
+.ghost .body {
+    position: relative;
+    background: var(--ghost-body-color);
+    height: 180px;
+    width: 150px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+
+.ghost .eye {
+    position: absolute;
+    top: 55px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-shadow: 0 -5px 0 0 #111;
+}
+
+.ghost .tentacle {
+    border-top: 20px solid var(--ghost-body-color);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+
+    position: absolute;
+    top: 180px;
+}
+
+.ghost .tentacle.two {
+    left: 26px;
+}
+
+.ghost .tentacle.three {
+    left: 52px;
+}
+
+.ghost .tentacle.four {
+    left: 78px;
+}
+
+.ghost .tentacle.five {
+    left: 104px;
+}
+
+.ghost .tentacle.six {
+    left: 130px;
+}
+
+.ghost .eye.left {
+    left: 20px;
+}
+
+.ghost .eye.right {
+    left: 63px;
+}
+
+/* float animation */
+@-webkit-keyframes float {
+    from {
+        -webkit-transform: translate(0, 0px);
+    }
+    65% {
+        -webkit-transform: translate(0, 15px);
+    }
+    to {
+        -webkit-transform: translate(0, -0px);
+    }
+}
+
+@-moz-keyframes float {
+    from {
+        -moz-transform: translate(0, 0px);
+    }
+    65% {
+        -moz-transform: translate(0, 15px);
+    }
+    to {
+        -moz-transform: translate(0, -0px);
+    }
+}
+
+@-o-keyframes float {
+    from {
+        -o-transform: translate(0, 0px);
+    }
+    65% {
+        -o-transform: translate(0, 15px);
+    }
+    to {
+        -o-transform: translate(0, -0px);
+    }
+}
+
+@keyframes float {
+    from {
+        transform: translate(0, 0px);
+    }
+    65% {
+        transform: translate(0, 15px);
+    }
+    to {
+        transform: translate(0, -0px);
+    }
+}
+
+@-webkit-keyframes float {
+    from {
+        -webkit-transform: translate(0, 0px);
+    }
+    65% {
+        -webkit-transform: translate(0, 15px);
+    }
+    to {
+        -webkit-transform: translate(0, -0px);
+    }
+}
+
+/* Fade animarion */
+@keyframes fadeInOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeInOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeInOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
